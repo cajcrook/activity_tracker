@@ -1,0 +1,14 @@
+.generate-button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #0b5ed7; /* Bootstrap primary hover color */
+}
+
+.generate-button:active {
+  transform: scale(0.95);
+}
