@@ -1,58 +1,46 @@
+# Activity Tracker
+## WORK IN PROGRESS
 
-# WeatherOrNot
-
-A Workout Generator and Tracker web app.
-
-## Table of Contents
-
-- [Features](#features)
-- [Structure](#structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-
-## Features
-- A user can signup and create an account
-- A user can login and log out 
-- A user can update their weight
-- A user can generate exercises based on a chosen muscle group
-- A user can log generated exercises along with loading and reps to create a workout plan
-- A user can enter their closest city or town and see the weather
-- A chart that displays the users weight updates
-- A gauge that displays someones weight
-- A user can favourite (and unfavourite) a generated exercise and then see a list of favourited exercises on the dashboard
-
-## Structure
-Our web application consists of:
+This repo containss a workout generating and tracking app.
 
 #### Frontend
 JavaScript, React, CSS, Bootstrap  
-  
 [![My Skills](https://skillicons.dev/icons?i=js,react,css,bootstrap)](https://skillicons.dev)
 
 #### Backend
 Python, Flask, PostgresSQL  
-  
 [![My Skills](https://skillicons.dev/icons?i=python,flask,postgres)](https://skillicons.dev)
 
-#### Testing
+#### Current functionality:
+- A user can signup and create an account.
+- A user can login and log out.
+- A user can update their weight.
+- A user can generate exercises based on a chosen muscle group.
+- A user can log generated exercises along with loading and reps to create a workout plan.
+- A user can enter their closest city or town and see the weather.
+- A chart that displays the users weight updates.
+- A gauge that displays someones weight.
+- A user can favourite (and unfavourite) a generated exercise and then see a list of favourited exercises on the dashboard.
 
-The React Testing Library is used to test the Frontend.  
-Pytest is used to test the Backend.
+#### Currently scope of update:
+- Review frontend testing.
+- Review UI experience.
+- Review API keys and requirements.
 
-## Prerequisites
 
+
+#### Prerequisites
 You will need to: 
 - Generate a free API key from [Api Ninjas](https://api-ninjas.com) and add this to your backend `.env` file.
 - Generate a free API key from [Open Weather](https://openweathermap.org/api) and add this to your backend `.env` file.
 
-## Installation
-
+#### Installation
 Instructions for how to install the project:
 
 ### 1. Clone the repository
 ```
 # Clone the repository:
-git clone https://github.com/Dewi-Afoko/WeatherOrNot.git ProjectName
+git clone https://github.com/cajcrook/activity_tracker
 
 # Change directory to the cloned repository
 cd ProjectName
@@ -73,8 +61,8 @@ source backend-venv/bin/activate
 (backend-venv); pip install -r requirements.txt
 
 # Create a test and development database
+(backend-venv); createdb Activity_Tracker
 (backend-venv); createdb Activity_Tracker_TEST
-(backend-venv); createdb Activity_Tracker_TEST_tEst
 
 # Open lib/database_connection.py and change the database names to match the above (if changed)
 (backend-venv); open lib/database_connection.py
@@ -117,8 +105,11 @@ npm run dev
 # Visit the url http://localhost:5173/ in your browser
 ```
 
-### 4. Run the Tests
-  
+### 4. Testing
+
+The React Testing Library is used to test the Frontend.  
+Pytest is used to test the Backend.  
+
 #### Backend tests
 ```
 # Run the backend tests
