@@ -1,7 +1,6 @@
 # Activity Tracker
 ## WORK IN PROGRESS
-
-This repo containss a workout generating and tracking app.
+This repo contains our group project - Activity Tracker. A workout generating and tracking app.
 
 #### Frontend
 JavaScript, React, CSS, Bootstrap  
