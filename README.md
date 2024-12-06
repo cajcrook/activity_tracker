@@ -60,6 +60,7 @@ source backend-venv/bin/activate
 (backend-venv); pip install -r requirements.txt
 
 # Create a test and development database
+(backend-venv); brew install postgresql@15
 (backend-venv); createdb Activity_Tracker
 (backend-venv); createdb Activity_Tracker_TEST
 
